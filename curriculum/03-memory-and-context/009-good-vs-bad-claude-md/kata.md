@@ -28,7 +28,7 @@ Run the exact same task in both projects and compare:
 
 **Task: "Add a new function called `reverse` that reverses a string"**
 
-**Run these commands in a separate terminal** (they use `claude -p` one-shot mode, which must run outside your current Claude Code session). The `cd` is needed so Claude reads the CLAUDE.md in each directory:
+**Run these commands in a regular terminal outside this session** (they use `claude -p` one-shot mode). Run from the repository root — the `cd` is needed so Claude reads the CLAUDE.md in each directory:
 
 1. Start in the bad/ directory:
    ```bash
@@ -38,7 +38,7 @@ Run the exact same task in both projects and compare:
    ```bash
    cd sandbox/claude-md-comparison/good && claude -p "Add a reverse function to this project that reverses a string. Show me the code you would write."
    ```
-3. Compare the outputs:
+3. Compare the outputs and come back here to discuss:
    - Does the good version follow specific style conventions?
    - Does it include JSDoc comments?
    - Does it add tests automatically?
@@ -47,7 +47,7 @@ Run the exact same task in both projects and compare:
 ## Exercise 3: Test-Writing Comparison
 **Task: "Write tests for the slugify function"**
 
-Run in both directories. The good CLAUDE.md specifies test conventions (empty string, null/undefined cases). Compare:
+Run in both directories using the same approach as Exercise 2 (regular terminal, `cd` then `claude -p`). The good CLAUDE.md specifies test conventions (empty string, null/undefined cases). Compare:
 - Does the bad version miss edge cases?
 - Does the good version test all three categories (normal, empty, edge)?
 

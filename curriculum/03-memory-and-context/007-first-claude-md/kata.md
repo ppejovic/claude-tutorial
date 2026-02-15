@@ -10,7 +10,7 @@ CLAUDE.md is a special file that Claude Code reads at the start of every session
 - Completed Kata 006
 
 ## Warm-Up
-Start a Claude Code session and ask: "Do you see any CLAUDE.md files in this repo?" Claude should find the root CLAUDE.md. Ask it to summarize what it says.
+From memory: What is the interview technique from Kata 006? When would you use it instead of writing a detailed prompt? (Answer: ask Claude to interview you about requirements before implementing; use it when you're not sure about the best approach)
 
 ## Exercise 1: Create a Project CLAUDE.md
 1. Ask Claude to create a CLAUDE.md in the sandbox/sample-app/ directory:
@@ -24,12 +24,13 @@ Start a Claude Code session and ask: "Do you see any CLAUDE.md files in this rep
 2. Review what Claude created. Does it match your requirements?
 
 ## Exercise 2: See CLAUDE.md in Action
-1. Start a fresh Claude session (`/clear` or restart)
+1. Clear your context with `/clear` so Claude re-reads CLAUDE.md fresh
 2. Ask Claude: "Add a new utility function to the sample app that formats dates"
 3. Observe: Does Claude follow the conventions from your CLAUDE.md?
    - Does it put the file in src/utils/?
    - Does it use const?
    - Does it use descriptive variable names?
+4. Run `/kata` to continue.
 
 ## Exercise 3: Modify and Test
 1. Add a new rule to your CLAUDE.md:
@@ -37,8 +38,9 @@ Start a Claude Code session and ask: "Do you see any CLAUDE.md files in this rep
    ## Error Responses
    All error responses must use this format: { "error": true, "message": "description" }
    ```
-2. Clear the session and ask Claude to add error handling to a route
+2. Run `/clear`, then ask Claude to add error handling to the tasks route
 3. Check: Does it use your specified error format?
+4. Run `/kata` to continue.
 
 ## Exercise 4: What NOT to Put in CLAUDE.md
 CLAUDE.md should contain stable, project-wide information. The official docs recommend being specific ("Use 2-space indentation" is better than "Format code properly") and reviewing periodically as your project evolves.
