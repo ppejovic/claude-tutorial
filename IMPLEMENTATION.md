@@ -13,7 +13,7 @@ Read this at session start (in build mode) to know what's been built and what to
 - [x] progress.json schema
 - [x] curriculum.json manifest
 - [x] .gitignore
-- [x] Slash commands (/kata, /next, /check, /review)
+- [x] Slash commands (/kata, /next, /check, /update)
 - [x] .claude/settings.json with recommended permissions
 
 ### Sandbox Projects

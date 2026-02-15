@@ -42,8 +42,8 @@ Instructions:
 
 12. Check the `lastReviewDate` field in progress.json. Only show a review reminder if lastReviewDate is a real date (not null) AND more than 14 days ago:
     ```
-    💡 It's been a while since your last review. Run /review to check for course updates and new Claude Code features.
+    💡 It's been a while since your last update check. Run /update to check for course updates.
     ```
-    Do NOT show this reminder on the user's first session or if they've never run /review before.
+    Do NOT show this reminder on the user's first session or if they've never run /update before.
 
 Important: The /kata command is READ-ONLY. Do NOT edit any files. The `startedAt` field in progress.json gets set by /next when the user completes their first kata.

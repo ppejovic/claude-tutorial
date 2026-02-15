@@ -1,8 +1,14 @@
-Review official sources and the upstream course repository for updates.
+Check for course updates or review source documentation for content changes.
 
-Instructions:
+This command behaves differently depending on the current mode.
 
-## Part 1: Check for Course Updates (Upstream Repo)
+---
+
+## Learn Mode (default)
+
+If the user has NOT run `/build` this session, run the **learn mode** flow:
+
+### Check for Course Updates (Upstream Repo)
 
 1. Run `git remote -v` to check if an `upstream` remote exists.
    - If not, check if the `origin` remote points to a fork (not the original course repo). If it's a fork, suggest:
@@ -23,7 +29,7 @@ Instructions:
 
 4. Report course updates:
    ```
-   📦 Course Repository Check
+   📦 Course Update Check
 
    Upstream: [remote URL]
    New commits available: [count]
@@ -41,18 +47,27 @@ Instructions:
    If no upstream remote and it looks like a fork, suggest adding one.
    If no updates, say "Course is up to date."
 
-## Part 2: Check Official Documentation
+5. Update `lastReviewDate` in `progress.json` to the current ISO timestamp.
 
-5. Fetch the latest Claude Code documentation from https://code.claude.com/docs
-6. Compare against the topics covered in `curriculum/curriculum.json`.
-7. Look for:
+---
+
+## Build Mode
+
+If the user HAS run `/build` this session, run the **build mode** flow:
+
+### Review Official Documentation for Content Changes
+
+1. Fetch the latest Claude Code documentation from https://code.claude.com/docs
+2. Read `curriculum/curriculum.json` to see all topics currently covered.
+3. Read `IMPLEMENTATION.md` to see what's been built.
+4. Compare the docs against the curriculum. Look for:
    - New features not covered by any existing kata
    - Changed features that might affect existing kata content
    - Deprecated features that should be noted
-8. Report findings:
 
+5. Report findings:
    ```
-   📋 Documentation Review — [Date]
+   📋 Source Documentation Review — [Date]
 
    Source: https://code.claude.com/docs
 
@@ -67,12 +82,9 @@ Instructions:
    - [Topics that are still current]
    ```
 
-9. If new features are found, suggest where in the curriculum they should go:
+6. If new features are found, suggest where in the curriculum they should go:
    - Basic features → Earlier modules
    - Advanced features → Later modules
    - Never renumber existing katas; use new IDs
 
-## Part 3: Update Review Timestamp
-
-10. Update `lastReviewDate` in `progress.json` to the current ISO timestamp.
-11. Don't make any other changes automatically — just report and suggest.
+7. Ask whether to apply any updates to existing kata content now.
