@@ -21,7 +21,7 @@ An interactive course structured as hands-on katas across 10 modules, designed f
 
 ```bash
 # Fork this repo on GitHub, then:
-git clone https://github.com/YOUR_USERNAME/claude-tutorial.git
+git clone https://github.com/ppejovic/claude-tutorial.git
 cd claude-tutorial
 ```
 
