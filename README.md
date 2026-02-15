@@ -72,7 +72,7 @@ Your progress is tracked in `progress.json` and committed to git. Use these comm
 - `/kata` — Show your current kata and overall progress
 - `/next` — Advance to the next kata
 - `/check` — Verify you've completed the current kata
-- `/review` — Check for course updates
+- `/update` — Check for course updates
 
 ## How It Works
 
