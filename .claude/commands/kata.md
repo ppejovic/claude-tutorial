@@ -17,15 +17,20 @@ Instructions:
 
    b. **One-sentence concept** — summarize the Concept section in a single sentence. Do NOT paste the full paragraph.
 
-   c. **The exercise** — show ONLY the next incomplete exercise. Strip out setup steps the user has obviously already done (e.g., "open terminal", "navigate to directory", "run claude" — they're already in Claude Code). Focus on the actionable steps. When an exercise tells the user to type or ask something, format those prompts as a quote block so they stand out visually:
+   c. **The exercise** — show ONLY the next incomplete exercise. Strip out setup steps the user has obviously already done (e.g., "open terminal", "navigate to directory", "run claude" — they're already in Claude Code). Focus on the actionable steps.
+
+      **Critical formatting rule for prompts:** When an exercise asks the user to type or ask something, you MUST format it as a labeled quote block so it's clearly a prompt to type, not an instruction to act on manually. Use this pattern:
+
       ```
-      > What files are in this repository?
+      Try asking:
+      > Add a comment at the top of sandbox/sample-app/src/index.js that says '// Sample Express app for Claude Code Katas'
       ```
-      This makes it obvious what to type. Do NOT wrap prompts in regular quotes inside a paragraph.
+
+      The "Try asking:" / "Type this:" label is essential — without it, a quote block containing an instruction like "Add a comment..." looks like YOU should do it, not like it's something for the student to type. NEVER show a prompt without the label, and NEVER put prompts inline in a paragraph.
 
    That's it. No horizontal rules, no extra headings, no repeating the kata title. No footer or progress summary after the exercise. Aim for ~10 lines total.
 
-7. **Auto-advance:** When the user completes an exercise (e.g., they type the suggested prompt and you execute it successfully), immediately show the next exercise. Don't wait for them to say "done" — just flow naturally into it. If something went wrong, help them fix it before moving on. After the LAST exercise (or challenge), mention `/check` and `/next` — not before.
+7. **Auto-advance:** When the user completes an exercise (e.g., they type the suggested prompt and you execute it successfully), immediately show the next exercise. Don't wait for them to say "done" — just flow naturally into it. If something went wrong, help them fix it before moving on. After the LAST exercise (or challenge), mention `/check` and `/next` — not before. When auto-advancing, use the SAME formatting rules as step 6c — especially the labeled quote blocks for prompts.
 
 8. If the user asks to go back to a previous exercise (e.g., "go back to exercise 1", "show exercise 2 again"), show that exercise.
 
