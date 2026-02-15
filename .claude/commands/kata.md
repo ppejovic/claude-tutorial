@@ -24,4 +24,9 @@ Next up: [Next kata title]
 7. If there are NEW katas available (curriculum version > progress curriculumVersion), note them.
 8. If the user has completed all katas, congratulate them.
 
+9. Check the `lastReviewDate` field in progress.json. If it is null or more than 14 days ago, add a reminder:
+   ```
+   💡 It's been a while since your last review. Run /review to check for course updates and new Claude Code features.
+   ```
+
 Important: If `progress.json` has no `startedAt` value, set it to the current timestamp — this is their first session.
