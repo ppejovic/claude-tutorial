@@ -38,7 +38,7 @@ Run the exact same task in both projects and compare:
    ```bash
    cd sandbox/claude-md-comparison/good && claude -p "Add a reverse function to this project that reverses a string. Show me the code you would write."
    ```
-3. Compare the outputs:
+3. Compare the outputs and come back here to discuss:
    - Does the good version follow specific style conventions?
    - Does it include JSDoc comments?
    - Does it add tests automatically?

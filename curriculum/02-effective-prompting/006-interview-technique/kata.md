@@ -84,7 +84,7 @@ The best practices suggest a powerful pattern: interview, write a spec, then sta
    Read @sandbox/sample-app/SPEC.md and implement it. Write tests first, then implement. Run tests to verify.
    ```
 
-The fresh session has clean context focused entirely on implementation, and you have a written spec to reference.
+The fresh session has clean context focused entirely on implementation, and you have a written spec to reference. Come back here when you're done and share how the implementation went — did Claude follow the spec accurately?
 
 ## Challenge
 Combine everything from Module 2 in one workflow:

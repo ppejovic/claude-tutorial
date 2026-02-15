@@ -30,6 +30,7 @@ Start a Claude Code session and ask: "Do you see any CLAUDE.md files in this rep
    - Does it put the file in src/utils/?
    - Does it use const?
    - Does it use descriptive variable names?
+4. Come back here and share what you observed.
 
 ## Exercise 3: Modify and Test
 1. Add a new rule to your CLAUDE.md:
