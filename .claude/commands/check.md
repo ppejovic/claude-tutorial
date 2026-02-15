@@ -16,16 +16,30 @@ Instructions:
    - Anything that requires subjective judgment (e.g., "You understand X")
    - Ask: "Did you complete: [criterion]?" and accept their answer
 
-5. Display results:
+5. Display results with visual flair:
    ```
-   🔍 Checking Kata [NNN]: [Title]
+   🔍 **Checking Kata [NNN]: [Title]**
 
    ✅ [Criterion 1]
    ✅ [Criterion 2]
    ❌ [Criterion 3] — [what's missing]
 
-   [X/Y criteria met]
+   **[X/Y] criteria met** ⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜
    ```
 
-6. If all criteria are met: "All criteria met! Run /next to advance."
-7. If some are missing: Show what's needed and offer guidance.
+   Use a mini progress bar after the count to visualize completion ratio.
+
+6. If all criteria are met, celebrate:
+   ```
+   🎉 **All criteria met!** You nailed this one.
+   → Run `/next` to advance to the next kata!
+   ```
+
+7. If some are missing, be encouraging but specific:
+   ```
+   💪 Almost there — [X/Y] done. Here's what's left:
+
+   ❌ [Criterion] — [specific guidance on how to fix it]
+
+   Give it another shot, then run `/check` again.
+   ```

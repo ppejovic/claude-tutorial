@@ -3,19 +3,19 @@
 **Estimated Time**: 20 minutes
 **Source**: [Claude Code Best Practices](https://docs.anthropic.com/en/docs/claude-code/best-practices)
 
-## Concept
+## 🧠 Concept
 The official best practices call this "the single highest-leverage thing you can do": give Claude a way to verify its own work. When you provide tests, type checks, or linting rules, Claude can iterate until the code is correct -- not just plausible. Without clear success criteria, Claude might produce something that looks right but does not actually work, and you become the only feedback loop.
 
 This is "verification-driven development": define the success criteria first, then let Claude work toward them.
 
-## Prerequisites
+## ⚙️ Prerequisites
 - Completed Kata 004
 - sandbox/sample-app has npm dependencies installed (`cd sandbox/sample-app && npm install`)
 
-## Warm-Up
+## 🔄 Warm-Up
 Write a specific prompt (Kata 004 style) for: "Add a DELETE /tasks/:id endpoint." Include what success looks like.
 
-## Exercise 1: Tests First, Then Implementation
+## 🏋️ Exercise 1: Tests First, Then Implementation
 The best practices show a clear pattern: provide test cases and tell Claude to run them after implementing.
 
 1. First, write a test (or ask Claude to write just the test):
@@ -32,7 +32,7 @@ The best practices show a clear pattern: provide test cases and tell Claude to r
    ```
 4. Key insight: Claude will run the tests itself, see failures, and iterate until they pass.
 
-## Exercise 2: Linting as Verification
+## 🏋️ Exercise 2: Linting as Verification
 The best practices note that verification can be "a test suite, a linter, or a Bash command that checks output."
 
 1. Ask Claude:
@@ -42,7 +42,7 @@ The best practices note that verification can be "a test suite, a linter, or a B
 2. Observe: Claude will set up ESLint, run it, see violations, and fix them in a loop.
 3. The linter serves as automated verification -- Claude keeps fixing until clean.
 
-## Exercise 3: The "Verify Yourself" Pattern
+## 🏋️ Exercise 3: The "Verify Yourself" Pattern
 The best practices show this pattern in their before/after table: always end with "run the tests after implementing."
 
 1. Try this prompt pattern:
@@ -53,7 +53,7 @@ The best practices show this pattern in their before/after table: always end wit
 3. This tells Claude to self-verify. Without it, Claude would implement and stop.
 4. Compare with: "Add input length validation to POST /tasks." Notice the difference in behavior.
 
-## Exercise 4: Defining Acceptance Criteria
+## 🏋️ Exercise 4: Defining Acceptance Criteria
 For complex tasks, list explicit criteria. Each one should be testable so Claude can verify it:
 
 ```
@@ -68,7 +68,7 @@ Implement rate limiting middleware for the sample app. Requirements:
 
 Notice how each criterion is testable. Claude can verify each one.
 
-## Exercise 5: Addressing Root Causes
+## 🏋️ Exercise 5: Addressing Root Causes
 The best practices warn against the "trust-then-verify gap" -- Claude produces plausible code that does not handle edge cases. They also advise: "address the root cause, don't suppress the error."
 
 Try this pattern:
@@ -78,19 +78,19 @@ The POST /tasks endpoint accepts empty strings for the title field. Fix this so 
 
 This follows the best practice: reproduce the issue with a test, fix the root cause, verify everything still works.
 
-## Challenge
+## 🎯 Challenge
 Give Claude a task with deliberately conflicting requirements and see how it handles it:
 ```
 Add a PUT /tasks/:id endpoint that replaces a task entirely. It must accept the same fields as POST. All existing tests must pass. The endpoint should return 200 on success and 404 if the task doesn't exist. Write tests and run them to verify.
 ```
 If existing tests assume certain behavior, Claude may need to reconcile conflicts. Watch how it reasons about this.
 
-## Reflection
+## 🪞 Reflection
 - How does providing verification change Claude's behavior?
 - What kinds of verification work best? (tests, linting, type checking, bash commands)
 - The best practices say: "If you can't verify it, don't ship it." How does this change your workflow?
 
-## Completion Criteria
+## ✅ Completion Criteria
 - [ ] You wrote tests before implementation and had Claude make them pass
 - [ ] You observed Claude running tests and iterating on failures
 - [ ] You used the "verify yourself" prompt pattern with the key phrase

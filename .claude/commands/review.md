@@ -23,23 +23,27 @@ Instructions:
 
 4. Report course updates:
    ```
-   📦 Course Repository Check
+   🔄 **Course Repository Check**
 
-   Upstream: [remote URL]
-   New commits available: [count]
+   📦 Upstream: [remote URL]
+   📥 New commits available: [count]
 
-   New katas added:
+   ✨ **New katas added:**
    - Kata [NNN]: [Title] (Module [X])
 
-   Updated katas:
+   🔧 **Updated katas:**
    - Kata [NNN]: [summary of changes]
 
-   To pull updates: git merge upstream/main
-   (Your progress.json will not be overwritten — it tracks by kata ID)
+   → To pull updates: `git merge upstream/main`
+   💡 Your progress.json is safe — it tracks by kata ID.
    ```
 
    If no upstream remote and it looks like a fork, suggest adding one.
-   If no updates, say "Course is up to date."
+   If no updates:
+   ```
+   🔄 **Course Repository Check**
+   ✅ Course is up to date — you have the latest!
+   ```
 
 ## Part 2: Check Official Documentation
 
@@ -52,18 +56,18 @@ Instructions:
 8. Report findings:
 
    ```
-   📋 Documentation Review — [Date]
+   📋 **Documentation Review** — [Date]
 
-   Source: https://code.claude.com/docs
+   🔗 Source: https://code.claude.com/docs
 
-   New Features Found:
+   ✨ **New Features Found:**
    - [Feature]: Could be added to Module [X] as Kata [NNN]
    - [Feature]: Could extend Kata [NNN]
 
-   Changes to Existing Topics:
+   ⚠️ **Changes to Existing Topics:**
    - [Topic]: [What changed, which kata affected]
 
-   No Action Needed:
+   ✅ **No Action Needed:**
    - [Topics that are still current]
    ```
 

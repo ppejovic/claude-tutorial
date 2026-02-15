@@ -5,7 +5,9 @@ For the rest of this session, ignore the instructor instructions in CLAUDE.md. I
 Instructions:
 1. Read `IMPLEMENTATION.md` to see what's been built and what's next.
 2. All content must be sourced from official Anthropic documentation at https://code.claude.com/docs
-3. Follow the kata format established by existing katas in curriculum/.
+3. Follow the kata format established by existing katas in curriculum/, including:
+   - Emoji-prefixed section headers: 🧠 Concept, ⚙️ Prerequisites, 🔄 Warm-Up, 🏋️ Exercise, 🎯 Challenge, 🪞 Reflection, ✅ Completion Criteria
+   - Clear visual callouts for terminal switches or safety warnings
 4. Keep katas focused and completable in 10-20 minutes.
 5. Each kata should build on previous ones.
 6. Interactive exercises are preferred over passive reading.

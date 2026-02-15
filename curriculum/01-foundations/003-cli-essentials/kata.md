@@ -3,19 +3,21 @@
 **Estimated Time**: 20 minutes
 **Source**: [CLI Reference](https://code.claude.com/docs/en/cli-reference)
 
-## Concept
+## 🧠 Concept
 Claude Code has powerful CLI options beyond the basic interactive session. You'll learn key flags for non-interactive use, output control, and session management. These are building blocks for automation and integration.
 
-## Prerequisites
+## ⚙️ Prerequisites
 - Completed Kata 002
 
-## Warm-Up
+## 🔄 Warm-Up
 From memory: What command starts Claude Code? What does `/clear` do? How do you cancel a response in progress? (Answers: `claude`, clears conversation context, press Escape)
 
-## Exercise 1: One-Shot Mode (-p)
+## 🏋️ Exercise 1: One-Shot Mode (-p)
 The `-p` (print) flag sends a single prompt and exits without entering interactive mode.
 
-1. Try it (run these in your regular terminal, not inside Claude Code):
+> 💻 **Terminal switch!** The commands in this exercise must be run in a **separate terminal tab**, not inside Claude Code. Open a new terminal, `cd` to this repo, and run them there.
+
+1. Try it:
    ```bash
    claude -p "List all JavaScript files in sandbox/sample-app/src/"
    ```
@@ -26,7 +28,7 @@ The `-p` (print) flag sends a single prompt and exits without entering interacti
    ```
 4. This is powerful for scripting and CI/CD pipelines
 
-## Exercise 2: Output Formats
+## 🏋️ Exercise 2: Output Formats
 1. Default output is text. Try JSON:
    ```bash
    claude -p "What are the Express routes in sandbox/sample-app?" --output-format json
@@ -37,7 +39,7 @@ The `-p` (print) flag sends a single prompt and exits without entering interacti
    ```
 3. Compare the outputs -- JSON mode returns structured data with metadata
 
-## Exercise 3: Continue and Resume
+## 🏋️ Exercise 3: Continue and Resume
 1. Start an interactive session and ask Claude something about the sample app
 2. Exit the session (Ctrl+C or type `exit`)
 3. Continue the most recent conversation in the current directory:
@@ -51,7 +53,7 @@ The `-p` (print) flag sends a single prompt and exits without entering interacti
    ```
    This shows a session picker so you can choose which conversation to continue.
 
-## Exercise 4: System Prompts
+## 🏋️ Exercise 4: System Prompts
 1. Append to the default system prompt to shape behavior while keeping Claude Code's built-in capabilities:
    ```bash
    claude -p "Review sandbox/sample-app/src/index.js" --append-system-prompt "Be extremely brief. One sentence max."
@@ -65,8 +67,9 @@ The `-p` (print) flag sends a single prompt and exits without entering interacti
    claude -p "What does this app do?" --append-system-prompt "Reply in exactly 3 bullet points" --output-format json
    ```
 
-## Exercise 5: Piping and Chaining
-1. Claude's output can be piped into other commands (concept example -- don't run this):
+## 🏋️ Exercise 5: Piping and Chaining
+1. Claude's output can be piped into other commands:
+   > ⚠️ **Concept only — don't run this.** Piping to `bash` executes generated code unsupervised.
    ```bash
    # This would generate a curl command and execute it:
    claude -p "Generate a curl command to test the POST /tasks endpoint of an Express app running on port 3000" | bash
@@ -80,18 +83,18 @@ The `-p` (print) flag sends a single prompt and exits without entering interacti
    git diff main --name-only | claude -p "Summarize what areas of the codebase these changes affect"
    ```
 
-## Challenge
+## 🎯 Challenge
 Write a one-liner that uses Claude to generate a summary of all JavaScript files in the sample app and saves it to `sandbox/app-summary.txt`:
 ```bash
 claude -p "Summarize each JS file in sandbox/sample-app/src/ in one line each" > sandbox/app-summary.txt
 ```
 
-## Reflection
+## 🪞 Reflection
 - When would you use `-p` (one-shot) vs interactive mode?
 - How could `-c` (continue) and `-r` (resume) help your daily workflow?
 - What use cases can you think of for piping data through Claude?
 
-## Completion Criteria
+## ✅ Completion Criteria
 - [ ] You ran Claude in one-shot mode with `-p`
 - [ ] You piped content into Claude from the command line
 - [ ] You used `-c` to continue a previous session

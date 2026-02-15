@@ -3,16 +3,16 @@
 **Estimated Time**: 15 minutes
 **Source**: [Memory Documentation](https://code.claude.com/docs/en/memory)
 
-## Concept
+## 🧠 Concept
 Claude Code can remember things across sessions using auto memory. The official docs describe it as "a persistent directory where Claude records learnings, patterns, and insights as it works." Unlike CLAUDE.md files that contain instructions you write for Claude, auto memory contains notes Claude writes for itself based on what it discovers during sessions. You can also manage memory explicitly with the `/memory` command.
 
-## Prerequisites
+## ⚙️ Prerequisites
 - Completed Kata 010
 
-## Warm-Up
+## 🔄 Warm-Up
 List three things you'd want Claude to remember across every session in this project. (Examples: "always run tests after changes", "use yarn not npm", "the API is RESTful")
 
-## Exercise 1: How Auto Memory Works
+## 🏋️ Exercise 1: How Auto Memory Works
 1. Check if you have any auto memory already:
    ```
    Show me the contents of my auto memory files if they exist
@@ -28,7 +28,7 @@ List three things you'd want Claude to remember across every session in this pro
 3. The `<project>` path is derived from the git repository root, so all subdirectories within the same repo share one auto memory directory.
 4. Important: only the first 200 lines of MEMORY.md are loaded into Claude's system prompt at startup. Topic files are read on demand, not at startup.
 
-## Exercise 2: Explicit Memory with /memory
+## 🏋️ Exercise 2: Explicit Memory with /memory
 1. Try the `/memory` command:
    ```
    /memory
@@ -43,7 +43,7 @@ List three things you'd want Claude to remember across every session in this pro
    What do you remember about running tests in this project?
    ```
 
-## Exercise 3: What Claude Remembers
+## 🏋️ Exercise 3: What Claude Remembers
 As the docs explain, Claude may automatically save things like:
 - **Project patterns**: build commands, test conventions, code style preferences
 - **Debugging insights**: solutions to tricky problems, common error causes
@@ -56,7 +56,7 @@ Try this experiment:
 3. Check the auto memory directory to see where it was saved
 4. Start a new session and ask Claude what package manager this project uses
 
-## Exercise 4: Memory vs CLAUDE.md
+## 🏋️ Exercise 4: Memory vs CLAUDE.md
 When should you use auto memory vs CLAUDE.md?
 
 | Use Auto Memory | Use CLAUDE.md |
@@ -72,7 +72,7 @@ Key distinction: Auto memory is personal and learned. CLAUDE.md is deliberate an
 2. Ask Claude to save it to memory
 3. Verify this does NOT go into CLAUDE.md -- it stays in the auto memory directory
 
-## Exercise 5: Managing Memory
+## 🏋️ Exercise 5: Managing Memory
 The docs recommend keeping MEMORY.md concise since it's loaded every session (first 200 lines). Claude handles this by moving detailed notes into separate topic files.
 
 1. View current memory contents
@@ -83,19 +83,19 @@ The docs recommend keeping MEMORY.md concise since it's loaded every session (fi
    - Remove outdated information
    - Don't duplicate what's in CLAUDE.md
 
-## Challenge
+## 🎯 Challenge
 Do a multi-session experiment:
 1. In session 1: Work on the sample app and establish a pattern (e.g., always add error handling). Tell Claude to remember key things.
 2. End the session
 3. In session 2: See if Claude remembers your preference without being told
 4. Check the auto memory directory to see what was saved and how it's structured
 
-## Reflection
+## 🪞 Reflection
 - How does auto memory change the experience of starting a new session?
 - What's the right balance between auto memory and CLAUDE.md?
 - Why does Claude only load the first 200 lines of MEMORY.md? What does this mean for how you structure memory?
 
-## Completion Criteria
+## ✅ Completion Criteria
 - [ ] You checked your auto memory file location and contents
 - [ ] You explicitly saved something to memory and verified it persisted
 - [ ] You can explain the difference between auto memory and CLAUDE.md
