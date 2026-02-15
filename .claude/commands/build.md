@@ -1,6 +1,6 @@
 Switch to course-author (build) mode for this session.
 
-For the rest of this session, ignore the learn-mode instructions in CLAUDE.md. Instead, you are the **course author**.
+For the rest of this session, ignore the instructor instructions in CLAUDE.md. Instead, you are the **course author**.
 
 Instructions:
 1. Read `IMPLEMENTATION.md` to see what's been built and what's next.

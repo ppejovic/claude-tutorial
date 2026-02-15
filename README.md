@@ -4,7 +4,9 @@ An interactive course that takes you from Claude Code beginner to power user thr
 
 ## What Is This?
 
-30 hands-on katas across 10 modules, designed for daily practice. Each kata takes 10-20 minutes and builds on the previous one. You'll learn by doing — not just reading.
+An interactive course structured as hands-on katas across 10 modules, designed for daily practice. Each kata takes 10-20 minutes and builds on the previous one. You'll learn by doing — not just reading.
+
+> **Current status:** Modules 1-3 (Katas 001-011) are complete. Modules 4-10 are planned but not yet built. See `IMPLEMENTATION.md` for details.
 
 ## Prerequisites
 
@@ -19,8 +21,8 @@ An interactive course that takes you from Claude Code beginner to power user thr
 
 ```bash
 # Fork this repo on GitHub, then:
-git clone https://github.com/YOUR_USERNAME/claude-code-katas.git
-cd claude-code-katas
+git clone https://github.com/ppejovic/claude-tutorial.git
+cd claude-tutorial
 ```
 
 ### 2. Install Dependencies
@@ -29,15 +31,7 @@ cd claude-code-katas
 cd sandbox/sample-app && npm install && cd ../..
 ```
 
-### 3. Switch to Learn Mode
-
-Edit `CLAUDE.md` and change the first config line:
-
-```
-mode: learn
-```
-
-### 4. Start Your First Kata
+### 3. Start Your First Kata
 
 ```bash
 claude
@@ -58,18 +52,18 @@ Think of it like a guided tour: Claude is both the instructor explaining what to
 
 ## Course Structure
 
-| Module | Katas | Topic |
-|--------|-------|-------|
-| 1. Foundations | 001-003 | First conversation, navigation, CLI essentials |
-| 2. Effective Prompting | 004-006 | Specific prompts, verification-driven dev, interview technique |
-| 3. Memory & Context | 007-011 | CLAUDE.md, hierarchy, good vs bad, modular rules, auto memory |
-| 4. Environment Setup | 012-014 | Permissions, plan mode, session management |
-| 5. Workflows | 015-017 | Bug fixing, TDD, git & PR workflows |
-| 6. Skills & Commands | 018-020 | Built-in commands, custom skills, advanced skills |
-| 7. Hooks | 021-023 | First hook, guards, advanced hooks |
-| 8. MCP Servers | 024-026 | Remote MCP, local MCP, practical workflows |
-| 9. Subagents | 027-029 | Built-in subagents, custom agents, patterns |
-| 10. Advanced Patterns | 030 | Headless mode, fan-out, CI/CD, agent teams |
+| Module | Katas | Topic | Status |
+|--------|-------|-------|--------|
+| 1. Foundations | 001-003 | First conversation, navigation, CLI essentials | ✅ Available |
+| 2. Effective Prompting | 004-006 | Specific prompts, verification-driven dev, interview technique | ✅ Available |
+| 3. Memory & Context | 007-011 | CLAUDE.md, hierarchy, good vs bad, modular rules, auto memory | ✅ Available |
+| 4. Environment Setup | 012-014 | Permissions, plan mode, session management | 🔜 Planned |
+| 5. Workflows | 015-017 | Bug fixing, TDD, git & PR workflows | 🔜 Planned |
+| 6. Skills & Commands | 018-020 | Built-in commands, custom skills, advanced skills | 🔜 Planned |
+| 7. Hooks | 021-023 | First hook, guards, advanced hooks | 🔜 Planned |
+| 8. MCP Servers | 024-026 | Remote MCP, local MCP, practical workflows | 🔜 Planned |
+| 9. Subagents | 027-029 | Built-in subagents, custom agents, patterns | 🔜 Planned |
+| 10. Advanced Patterns | 030 | Headless mode, fan-out, CI/CD, agent teams | 🔜 Planned |
 
 ## Progress Tracking
 

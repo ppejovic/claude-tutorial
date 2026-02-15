@@ -6,7 +6,7 @@ This file tracks the build progress of the Claude Code Katas course. Read this a
 
 ### Infrastructure
 - [x] Repository directory structure
-- [x] CLAUDE.md with build/learn mode
+- [x] CLAUDE.md with instructor role
 - [x] README.md with course overview
 - [x] progress.json schema
 - [x] curriculum.json manifest
