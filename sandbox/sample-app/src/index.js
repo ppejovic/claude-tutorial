@@ -1,3 +1,4 @@
+// Sample Express app for Claude Code Katas
 const express = require("express");
 const requestLogger = require("./middleware/logger");
 const healthRouter = require("./routes/health");

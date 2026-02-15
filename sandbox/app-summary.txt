@@ -1,0 +1,5 @@
+- **`src/index.js`** — Express app entry point that wires up JSON parsing, request logging, health/task routes, and 404/error handlers.
+- **`src/middleware/logger.js`** — Middleware that logs each request's method, URL, status code, and duration on response finish.
+- **`src/utils/validate.js`** — Validation helpers: `validateTask` checks required fields/constraints, `isValidId` checks for positive integers.
+- **`src/routes/health.js`** — Single `GET /health` endpoint returning status, uptime, and timestamp.
+- **`src/routes/tasks.js`** — Full CRUD routes for an in-memory task store (list, get, create, update, delete) with an intentional bug in the get-by-id handler.
