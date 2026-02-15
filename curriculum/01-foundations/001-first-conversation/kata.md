@@ -18,6 +18,7 @@ Your first interaction with Claude Code. You'll learn how to start a session, as
 2. Run `claude` to start a session
 3. You should see the Claude Code welcome screen with session information. Type: "What files are in this repository?"
 4. Observe: Claude reads the directory and lists files. Notice it uses tools (like `Bash`, `Glob`, or `Read`) automatically.
+5. Now ask Claude: "Read the welcome file in the first kata's exercises folder." It should find and display `curriculum/01-foundations/001-first-conversation/exercises/welcome.md` on its own.
 
 ## Exercise 2: Ask About Code
 1. Ask Claude: "Explain what sandbox/sample-app does"
