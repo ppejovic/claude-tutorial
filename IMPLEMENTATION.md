@@ -1,6 +1,8 @@
-# Implementation Progress
+# Build Progress
 
-This file tracks the build progress of the Claude Code Katas course. Read this at session start (in build mode) to know where things stand.
+This file tracks the **build progress** of course content (what katas have been authored). This is NOT about student/user progress — that's tracked in `progress.json` at runtime.
+
+Read this at session start (in build mode) to know what's been built and what to build next.
 
 ## Phase 1: Katas 001-011 (Modules 1-3)
 
