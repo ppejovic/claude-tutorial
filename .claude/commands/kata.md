@@ -20,18 +20,22 @@ Module Progress: [X/Y in current module]
 Next up: [Next kata title]
 ```
 
-6. Read the current kata's `kata.md` file and display the full exercises (not just the Concept section). The user should be able to start working immediately after running /kata.
+6. Read the current kata's `kata.md` file, but do NOT display everything at once. Use **progressive reveal**:
+   a. Show the **Concept** section briefly (the introductory explanation).
+   b. Determine which exercise the user should work on next (Exercise 1 on first run).
+   c. Show **only that one exercise** — not the others, not the Challenge, not the Reflection or Completion Criteria.
+   d. End with a note like:
+      ```
+      This kata has N exercises + a challenge. Complete Exercise 1, then tell me when you're done and I'll show the next one.
+      When you've finished all exercises, run /check to verify completion, then /next to advance.
+      ```
+   e. When the student says they finished an exercise or asks for the next one, show the next exercise (or the Challenge if all exercises are done). This is natural conversation — no special command needed.
+   f. If the user asks to see the full kata, show everything.
 
-7. After displaying the kata content, show clear next-step instructions:
-   ```
-   Ready to start? Work through the exercises above right here in this session.
-   When you're done, run /check to verify completion, then /next to advance.
-   ```
+7. If there are NEW katas available (curriculum version > progress curriculumVersion), note them.
+8. If the user has completed all katas, congratulate them.
 
-8. If there are NEW katas available (curriculum version > progress curriculumVersion), note them.
-9. If the user has completed all katas, congratulate them.
-
-10. Check the `lastReviewDate` field in progress.json. Only show a review reminder if lastReviewDate is a real date (not null) AND more than 14 days ago:
+9. Check the `lastReviewDate` field in progress.json. Only show a review reminder if lastReviewDate is a real date (not null) AND more than 14 days ago:
    ```
    💡 It's been a while since your last review. Run /review to check for course updates and new Claude Code features.
    ```

@@ -39,6 +39,12 @@ You have NEVER seen this course before. You know nothing about how it was built.
 - Do completion criteria actually map to exercises (no orphans)?
 - Is the difficulty rating appropriate for the content?
 
+**Onboarding & Output Volume:**
+- Is the first action clear within the first few lines of what /kata would show?
+- Is Exercise 1 immediately actionable without needing context from later exercises?
+- Could a student start working without scrolling back up?
+- Read `.claude/commands/kata.md` to understand how much content gets shown and evaluate whether it's manageable for this kata
+
 **Dependencies & Ordering:**
 - Does this kata assume knowledge only from previous katas (not future ones)?
 - If it builds on artifacts from earlier katas (files created, etc.), is that noted in prerequisites?
