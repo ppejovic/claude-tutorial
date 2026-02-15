@@ -10,7 +10,7 @@ You do not always know the best approach upfront. Instead of guessing at a detai
 - Completed Kata 005
 
 ## Warm-Up
-Think of a feature you would want to add to the sample app. Do not write a prompt yet -- just hold the idea in your mind.
+From memory: In verification-driven development (Kata 005), what do you ask Claude to do *before* implementing a feature? (Answer: write tests first, then implement, then run tests to verify)
 
 ## Exercise 1: Let Claude Interview You
 The best practices provide a specific template for the interview technique:
@@ -79,12 +79,11 @@ The best practices suggest a powerful pattern: interview, write a spec, then sta
    ```
 2. Answer the questions thoroughly
 3. Review the spec Claude produces
-4. Start a fresh Claude session (`/clear` or new terminal) and use the spec:
+4. Clear your context with `/clear`, then use the spec in a clean session:
    ```
-   Read @sandbox/sample-app/SPEC.md and implement it. Write tests first, then implement. Run tests to verify.
+   Read sandbox/sample-app/SPEC.md and implement it. Write tests first, then implement. Run tests to verify.
    ```
-
-The fresh session has clean context focused entirely on implementation, and you have a written spec to reference. Come back here when you're done and share how the implementation went — did Claude follow the spec accurately?
+5. The clean context means Claude focuses entirely on implementation using your written spec. Once done, run `/kata` to continue.
 
 ## Challenge
 Combine everything from Module 2 in one workflow:

@@ -10,33 +10,39 @@ The quality of Claude Code's output depends heavily on the specificity of your p
 - Completed Kata 003
 
 ## Warm-Up
-From memory: What flag runs Claude Code in one-shot mode? What does `@` do in a prompt? (Answers: `-p`, references a specific file/directory)
+From memory: What flag runs Claude Code in one-shot mode? What flag continues your most recent conversation? (Answers: `-p`, `-c`)
 
-## Exercise 1: Vague Prompt — Adding a Feature
-Start a fresh Claude session and try this vague prompt:
+## Exercise 1: The Vague vs Specific Test
+Run each prompt below **in a regular terminal outside this Claude Code session** using one-shot mode, so they don't influence each other. Compare the results side by side.
 
-"Add a search feature to the sample app"
+**Vague version:**
+```bash
+claude -p "Add a search feature to the sample app"
+```
 
-Notice what happens: Does Claude ask clarifying questions? Does it guess where to put things? Does the result match what you had in mind?
+**Specific version:**
+```bash
+claude -p "Add a GET /tasks/search?q=term endpoint to sandbox/sample-app/src/routes/tasks.js that filters tasks whose title contains the search term (case-insensitive). Return 400 if q parameter is missing."
+```
 
-Exit that session and come back here. What did you observe?
+Which gave you what you wanted on the first try? Which required you to guess what Claude would do?
 
-## Exercise 2: Specific Prompt — Adding a Feature
-Start another fresh session and try the specific version of the same task:
+## Exercise 2: Another Pair — Writing Tests
+Try the same comparison with test-writing prompts in a regular terminal:
 
-"Add a GET /tasks/search?q=term endpoint to sandbox/sample-app/src/routes/tasks.js that filters tasks whose title contains the search term (case-insensitive). Return 400 if q parameter is missing."
+**Vague:**
+```bash
+claude -p "Write some tests for the sample app"
+```
 
-Exit and come back here. How did this compare to the vague version? Which gave you what you wanted on the first try?
+**Specific:**
+```bash
+claude -p "Add a test to sandbox/sample-app/tests/tasks.test.js that verifies POST /tasks returns 400 when the title field is missing from the request body"
+```
 
-## Exercise 3: Your Turn — Writing Tests
-Now try a pair yourself. Start a fresh session with a vague test prompt, then another with a specific one. Here's a suggestion:
+Which one required follow-up? Which was ready to use as-is?
 
-- Vague: "Write some tests"
-- Specific: "Add a test to sandbox/sample-app/tests/tasks.test.js that verifies POST /tasks returns 400 when the title field is missing from the request body"
-
-Come back and share what you noticed about the difference.
-
-## Exercise 4: The Specificity Formula
+## Exercise 3: The Specificity Formula
 The official best practices identify these strategies for specific prompts:
 1. **Scope the task** — which file, what scenario
 2. **Point to sources** — direct Claude to files that answer its questions
@@ -48,7 +54,7 @@ Pick one of these tasks and write a prompt using those strategies, then run it r
 - Add input validation for task descriptions (max 200 characters)
 - Add a middleware that sets CORS headers
 
-## Exercise 5: Show, Don't Tell
+## Exercise 4: Show, Don't Tell
 Sometimes the best prompt includes an example of the output format you want.
 
 Try this:
