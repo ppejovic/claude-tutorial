@@ -3,6 +3,7 @@ node_modules/
 *.log
 .env
 .env.local
+.claude/settings.local.json
 
 # Progress file is tracked by the user but gitignored in the template
 # Remove this line after forking to track your progress
