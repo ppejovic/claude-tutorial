@@ -1,0 +1,286 @@
+{
+  "version": "1.0.0",
+  "totalKatas": 30,
+  "modules": [
+    {
+      "id": "01-foundations",
+      "title": "Foundations",
+      "description": "Get comfortable with Claude Code basics",
+      "katas": [
+        {
+          "id": "001",
+          "title": "First Conversation",
+          "path": "curriculum/01-foundations/001-first-conversation",
+          "difficulty": "beginner",
+          "estimatedMinutes": 15
+        },
+        {
+          "id": "002",
+          "title": "Navigation & Discovery",
+          "path": "curriculum/01-foundations/002-basic-navigation",
+          "difficulty": "beginner",
+          "estimatedMinutes": 15
+        },
+        {
+          "id": "003",
+          "title": "CLI Essentials",
+          "path": "curriculum/01-foundations/003-cli-essentials",
+          "difficulty": "beginner",
+          "estimatedMinutes": 20
+        }
+      ]
+    },
+    {
+      "id": "02-effective-prompting",
+      "title": "Effective Prompting",
+      "description": "Learn to communicate effectively with Claude Code",
+      "katas": [
+        {
+          "id": "004",
+          "title": "Specific vs Vague Prompts",
+          "path": "curriculum/02-effective-prompting/004-specific-vs-vague",
+          "difficulty": "beginner",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "005",
+          "title": "Verification-Driven Development",
+          "path": "curriculum/02-effective-prompting/005-verification-driven",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "006",
+          "title": "The Interview Technique",
+          "path": "curriculum/02-effective-prompting/006-interview-technique",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 15
+        }
+      ]
+    },
+    {
+      "id": "03-memory-and-context",
+      "title": "Memory & Context",
+      "description": "Master CLAUDE.md, memory hierarchy, and persistent context",
+      "katas": [
+        {
+          "id": "007",
+          "title": "Your First CLAUDE.md",
+          "path": "curriculum/03-memory-and-context/007-first-claude-md",
+          "difficulty": "beginner",
+          "estimatedMinutes": 15
+        },
+        {
+          "id": "008",
+          "title": "CLAUDE.md Hierarchy",
+          "path": "curriculum/03-memory-and-context/008-claude-md-hierarchy",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "009",
+          "title": "Good vs Bad CLAUDE.md",
+          "path": "curriculum/03-memory-and-context/009-good-vs-bad-claude-md",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "010",
+          "title": "Modular Rules",
+          "path": "curriculum/03-memory-and-context/010-modular-rules",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 15
+        },
+        {
+          "id": "011",
+          "title": "Auto Memory & /memory",
+          "path": "curriculum/03-memory-and-context/011-auto-memory",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 15
+        }
+      ]
+    },
+    {
+      "id": "04-environment-setup",
+      "title": "Environment Setup",
+      "description": "Configure permissions, plan mode, and session management",
+      "katas": [
+        {
+          "id": "012",
+          "title": "Permissions & Settings",
+          "path": "curriculum/04-environment-setup/012-permissions-settings",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 15
+        },
+        {
+          "id": "013",
+          "title": "Plan Mode",
+          "path": "curriculum/04-environment-setup/013-plan-mode",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "014",
+          "title": "Session Management",
+          "path": "curriculum/04-environment-setup/014-session-management",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 15
+        }
+      ]
+    },
+    {
+      "id": "05-workflows",
+      "title": "Workflows",
+      "description": "Real-world development workflows with Claude Code",
+      "katas": [
+        {
+          "id": "015",
+          "title": "Bug Fixing Workflow",
+          "path": "curriculum/05-workflows/015-bug-fixing",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "016",
+          "title": "Test-Driven with Claude",
+          "path": "curriculum/05-workflows/016-test-driven",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "017",
+          "title": "Git & PR Workflows",
+          "path": "curriculum/05-workflows/017-git-pr-workflows",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        }
+      ]
+    },
+    {
+      "id": "06-skills-and-commands",
+      "title": "Skills & Commands",
+      "description": "Built-in and custom slash commands",
+      "katas": [
+        {
+          "id": "018",
+          "title": "Built-in Commands",
+          "path": "curriculum/06-skills-and-commands/018-built-in-commands",
+          "difficulty": "beginner",
+          "estimatedMinutes": 15
+        },
+        {
+          "id": "019",
+          "title": "Custom Skills",
+          "path": "curriculum/06-skills-and-commands/019-custom-skills",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "020",
+          "title": "Advanced Skills",
+          "path": "curriculum/06-skills-and-commands/020-advanced-skills",
+          "difficulty": "advanced",
+          "estimatedMinutes": 20
+        }
+      ]
+    },
+    {
+      "id": "07-hooks",
+      "title": "Hooks",
+      "description": "Automate actions with lifecycle hooks",
+      "katas": [
+        {
+          "id": "021",
+          "title": "Your First Hook",
+          "path": "curriculum/07-hooks/021-first-hook",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "022",
+          "title": "PreToolUse Guards",
+          "path": "curriculum/07-hooks/022-pretooluse-guards",
+          "difficulty": "advanced",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "023",
+          "title": "Advanced Hooks",
+          "path": "curriculum/07-hooks/023-advanced-hooks",
+          "difficulty": "advanced",
+          "estimatedMinutes": 20
+        }
+      ]
+    },
+    {
+      "id": "08-mcp-servers",
+      "title": "MCP Servers",
+      "description": "Extend Claude Code with Model Context Protocol servers",
+      "katas": [
+        {
+          "id": "024",
+          "title": "Connect Your First MCP",
+          "path": "curriculum/08-mcp-servers/024-first-mcp",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "025",
+          "title": "Local MCP Servers",
+          "path": "curriculum/08-mcp-servers/025-local-mcp",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "026",
+          "title": "MCP in Practice",
+          "path": "curriculum/08-mcp-servers/026-mcp-practice",
+          "difficulty": "advanced",
+          "estimatedMinutes": 20
+        }
+      ]
+    },
+    {
+      "id": "09-subagents",
+      "title": "Subagents",
+      "description": "Delegate work to specialized subagents",
+      "katas": [
+        {
+          "id": "027",
+          "title": "Built-in Subagents",
+          "path": "curriculum/09-subagents/027-built-in-subagents",
+          "difficulty": "intermediate",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "028",
+          "title": "Custom Subagents",
+          "path": "curriculum/09-subagents/028-custom-subagents",
+          "difficulty": "advanced",
+          "estimatedMinutes": 20
+        },
+        {
+          "id": "029",
+          "title": "Subagent Patterns",
+          "path": "curriculum/09-subagents/029-subagent-patterns",
+          "difficulty": "advanced",
+          "estimatedMinutes": 20
+        }
+      ]
+    },
+    {
+      "id": "10-advanced-patterns",
+      "title": "Advanced Patterns",
+      "description": "Power user techniques and automation",
+      "katas": [
+        {
+          "id": "030",
+          "title": "Power User Synthesis",
+          "path": "curriculum/10-advanced-patterns/030-power-user-synthesis",
+          "difficulty": "advanced",
+          "estimatedMinutes": 30
+        }
+      ]
+    }
+  ]
+}

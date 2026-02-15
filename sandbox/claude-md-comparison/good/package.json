@@ -1,0 +1,12 @@
+{
+  "name": "string-utils",
+  "version": "1.0.0",
+  "description": "A utility library for string transformations",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

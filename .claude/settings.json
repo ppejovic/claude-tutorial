@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test:*)",
+      "Bash(node:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(npx jest:*)",
+      "Bash(npx tsx:*)"
+    ],
+    "deny": []
+  }
+}

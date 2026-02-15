@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.env.local
+
+# Progress file is tracked by the user but gitignored in the template
+# Remove this line after forking to track your progress
+# progress.json
