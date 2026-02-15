@@ -20,13 +20,21 @@ Module Progress: [X/Y in current module]
 Next up: [Next kata title]
 ```
 
-6. Read the current kata's `kata.md` file and display a brief overview (the Concept section).
-7. If there are NEW katas available (curriculum version > progress curriculumVersion), note them.
-8. If the user has completed all katas, congratulate them.
+6. Read the current kata's `kata.md` file and display the full exercises (not just the Concept section). The user should be able to start working immediately after running /kata.
 
-9. Check the `lastReviewDate` field in progress.json. If it is null or more than 14 days ago, add a reminder:
+7. After displaying the kata content, show clear next-step instructions:
+   ```
+   Ready to start? Work through the exercises above right here in this session.
+   When you're done, run /check to verify completion, then /next to advance.
+   ```
+
+8. If there are NEW katas available (curriculum version > progress curriculumVersion), note them.
+9. If the user has completed all katas, congratulate them.
+
+10. Check the `lastReviewDate` field in progress.json. Only show a review reminder if lastReviewDate is a real date (not null) AND more than 14 days ago:
    ```
    💡 It's been a while since your last review. Run /review to check for course updates and new Claude Code features.
    ```
+   Do NOT show this reminder on the user's first session or if they've never run /review before.
 
-Important: If `progress.json` has no `startedAt` value, set it to the current timestamp — this is their first session.
+Important: The /kata command is READ-ONLY. Do NOT edit any files. The `startedAt` field in progress.json gets set by /next when the user completes their first kata.

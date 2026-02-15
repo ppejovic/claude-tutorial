@@ -9,6 +9,7 @@ Instructions:
    - If criteria are not met, tell the user what's still needed and don't advance.
 4. If all criteria are met (or self-reported):
    - Update `progress.json`: add current kata to `completed` with timestamp, set `currentKata` to next kata ID.
+   - If `startedAt` is null, set it to the current timestamp (this is the user's first completion).
    - Write the updated `progress.json`.
    - Display: "✅ Kata [NNN] complete! Moving to Kata [NNN+1]: [Title]"
    - Show a brief overview of the next kata (its Concept section).
