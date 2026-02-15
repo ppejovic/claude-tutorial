@@ -11,6 +11,11 @@ Instructions:
 6. Interactive exercises are preferred over passive reading.
 7. Commit after completing each meaningful unit of work.
 
+After making content changes, run the UX reviewer to catch issues:
+- Launch via Task tool (general-purpose subagent) with prompt: "Review katas [list]. Read .claude/agents/ux-reviewer.md for your instructions."
+- Fix critical/warning issues, re-launch on fixed katas until clean
+- See `.claude/agents/ux-reviewer.md` for the full reviewer spec
+
 Display:
 ```
 🔧 Build mode active for this session.

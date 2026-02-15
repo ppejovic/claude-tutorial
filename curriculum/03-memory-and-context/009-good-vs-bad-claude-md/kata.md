@@ -28,6 +28,8 @@ Run the exact same task in both projects and compare:
 
 **Task: "Add a new function called `reverse` that reverses a string"**
 
+**Run these commands in a separate terminal** (they use `claude -p` one-shot mode, which must run outside your current Claude Code session). The `cd` is needed so Claude reads the CLAUDE.md in each directory:
+
 1. Start in the bad/ directory:
    ```bash
    cd sandbox/claude-md-comparison/bad && claude -p "Add a reverse function to this project that reverses a string. Show me the code you would write."

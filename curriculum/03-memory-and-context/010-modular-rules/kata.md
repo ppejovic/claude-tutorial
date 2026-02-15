@@ -13,9 +13,9 @@ For larger projects, a single CLAUDE.md can become unwieldy. Claude Code support
 Where would you put a CLAUDE.md that only applies to test files? (Kata 008 answer: in the tests/ directory. But this kata shows a more flexible approach using `.claude/rules/`.)
 
 ## Exercise 1: Create Your First Rule File
-1. Create the rules directory and a rule file:
+1. Create the rules directory and a rule file in the sandbox project:
    ```
-   Create .claude/rules/testing.md with this content:
+   Create sandbox/sample-app/.claude/rules/testing.md with this content:
 
    ---
    paths:
@@ -36,7 +36,7 @@ Create rules for different parts of the sample app:
 
 1. API routes rule:
    ```
-   Create .claude/rules/routes.md:
+   Create sandbox/sample-app/.claude/rules/routes.md:
    ---
    paths:
      - "src/routes/**/*.js"
@@ -50,7 +50,7 @@ Create rules for different parts of the sample app:
 
 2. Utilities rule:
    ```
-   Create .claude/rules/utils.md:
+   Create sandbox/sample-app/.claude/rules/utils.md:
    ---
    paths:
      - "src/utils/**/*.js"
@@ -80,7 +80,7 @@ paths:
 
 Create a rule that applies to both JavaScript and potential TypeScript files:
 ```
-Create .claude/rules/style.md:
+Create sandbox/sample-app/.claude/rules/style.md:
 ---
 paths:
   - "**/*.js"

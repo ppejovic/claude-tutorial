@@ -22,7 +22,7 @@ The best practices show a clear pattern: provide test cases and tell Claude to r
    ```
    Add a test to sandbox/sample-app/tests/tasks.test.js for a PATCH /tasks/:id endpoint that updates a task's title. Test cases: successful update returns 200, missing task returns 404, missing title returns 400.
    ```
-2. Run the tests -- they should fail (the endpoint does not exist yet):
+2. Run the tests -- they should fail (the endpoint does not exist yet). **Run this in your terminal, not as a Claude Code prompt** (or ask Claude to run the tests for you):
    ```bash
    cd sandbox/sample-app && npm test
    ```

@@ -39,6 +39,8 @@ Verify: Ask Claude in this repo: "What CLAUDE.md files do you see and in what or
 2. Now start Claude in the sample-app directory. Your user preferences AND the project CLAUDE.md both apply.
 3. Ask Claude to create a utility. Does it try to use TypeScript? (It should, from your user prefs -- but the project CLAUDE.md says the project uses JS, so observe how Claude reconciles this. The project-level instruction is more specific and takes precedence.)
 
+> **Note:** After this kata, you may want to edit or remove `~/.claude/CLAUDE.md` so the TypeScript preference doesn't affect your other projects.
+
 ## Exercise 3: Directory-Scoped CLAUDE.md
 1. Create a CLAUDE.md in sandbox/sample-app/tests/:
    ```markdown

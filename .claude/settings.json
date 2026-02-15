@@ -6,7 +6,19 @@
       "Bash(cat:*)",
       "Bash(ls:*)",
       "Bash(npx jest:*)",
-      "Bash(npx tsx:*)"
+      "Bash(npx tsx:*)",
+      "Bash(git:*)",
+      "Bash(mkdir:*)",
+      "Bash(find:*)",
+      "Bash(diff:*)",
+      "Edit",
+      "Write(curriculum/**)",
+      "Write(.claude/**)",
+      "Write(sandbox/**)",
+      "Write(IMPLEMENTATION.md)",
+      "Write(README.md)",
+      "Write(progress.json)",
+      "Write(CLAUDE.md)"
     ],
     "deny": []
   }

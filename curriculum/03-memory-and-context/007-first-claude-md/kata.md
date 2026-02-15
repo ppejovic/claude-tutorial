@@ -13,8 +13,7 @@ CLAUDE.md is a special file that Claude Code reads at the start of every session
 Start a Claude Code session and ask: "Do you see any CLAUDE.md files in this repo?" Claude should find the root CLAUDE.md. Ask it to summarize what it says.
 
 ## Exercise 1: Create a Project CLAUDE.md
-1. Navigate to the sandbox/sample-app/ directory
-2. Create a CLAUDE.md file there. Ask Claude:
+1. Ask Claude to create a CLAUDE.md in the sandbox/sample-app/ directory:
    ```
    Create a CLAUDE.md for sandbox/sample-app/ that includes:
    - Project description (Express.js task manager API)
@@ -22,7 +21,7 @@ Start a Claude Code session and ask: "Do you see any CLAUDE.md files in this rep
    - Code style: use const over let, descriptive variable names, always handle errors
    - Architecture: routes in src/routes/, utilities in src/utils/
    ```
-3. Review what Claude created. Does it match your requirements?
+2. Review what Claude created. Does it match your requirements?
 
 ## Exercise 2: See CLAUDE.md in Action
 1. Start a fresh Claude session (`/clear` or restart)

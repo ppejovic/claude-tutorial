@@ -66,11 +66,11 @@ The `-p` (print) flag sends a single prompt and exits without entering interacti
    ```
 
 ## Exercise 5: Piping and Chaining
-1. Use Claude in a pipeline:
+1. Claude's output can be piped into other commands (concept example -- don't run this):
    ```bash
+   # This would generate a curl command and execute it:
    claude -p "Generate a curl command to test the POST /tasks endpoint of an Express app running on port 3000" | bash
    ```
-   (Don't actually run this unless the sample app is running -- it's to show the concept)
 2. Process file listings:
    ```bash
    ls sandbox/sample-app/src/**/*.js | claude -p "Which of these files likely handles HTTP routing?"

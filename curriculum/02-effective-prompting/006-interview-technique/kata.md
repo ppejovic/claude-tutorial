@@ -17,7 +17,7 @@ The best practices provide a specific template for the interview technique:
 
 1. Try this prompt (adapted from the official recommendation):
    ```
-   I want to add user authentication to the sample app. Interview me in detail using the AskUserQuestion tool.
+   I want to add user authentication to the sample app. Before implementing anything, interview me by asking detailed questions.
 
    Ask about technical implementation, UI/UX, edge cases, concerns, and tradeoffs. Don't ask obvious questions -- dig into the hard parts I might not have considered.
 

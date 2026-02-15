@@ -17,7 +17,7 @@ List three things you'd want Claude to remember across every session in this pro
    ```
    Show me the contents of my auto memory files if they exist
    ```
-2. Auto memory is stored per-project at:
+2. Auto memory is stored per-project at `~/.claude/projects/<project>/memory/`. The directory structure might look like this (files are created as Claude learns):
    ```
    ~/.claude/projects/<project>/memory/
    ├── MEMORY.md          # Concise index, loaded into every session
